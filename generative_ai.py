@@ -14,10 +14,7 @@ st.header("My first Chatbot")
 with  st.sidebar:
     st.title("Your Documents")
     file = st.file_uploader(" Upload a PDf file and start asking questions", type="pdf")
-    if uploaded_file is not None:
-        # Perform operations on the uploaded PDF file
-        st.write("File uploaded successfully.")
-        
+
 #Extract the text
 if file is not None:
     pdf_reader = PdfReader(file)
