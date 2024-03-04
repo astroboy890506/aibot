@@ -6,7 +6,7 @@ from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain_community.chat_models import ChatOpenAI
 
-OPENAI_API_KEY = "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" #Pass your key here
+OPENAI_API_KEY = "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" #Pass your key here
 
 #Upload PDF files
 st.header("My first Chatbot")
@@ -32,7 +32,6 @@ if file is not None:
     )
     chunks = text_splitter.split_text(text)
     #st.write(chunks)
-
 
     # generating embedding
     embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
